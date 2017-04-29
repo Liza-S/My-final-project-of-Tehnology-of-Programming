@@ -14,7 +14,10 @@ private:
 	bool flag;
 protected:
 public:
-	__fastcall TMyStringGrid1(TComponent* Owner);
+	__fastcall TMyStringGrid1(TComponent* Owner)
+	{
+		DYNAMIC void __fastcall KeyDown(Word &Key, Class::TShiftState shift);
+	}
 __published:
 };
 //---------------------------------------------------------------------------
