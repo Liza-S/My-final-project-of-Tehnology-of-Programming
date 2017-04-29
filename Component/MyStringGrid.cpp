@@ -25,8 +25,9 @@ __fastcall TMyStringGrid1::TMyStringGrid1(TComponent* Owner)
 void __fastcall TMyStringGrid1::KeyDown(Word &Key, Classes::TShiftState shift)
 {
 	if (Key == VK_F11) {
-		if (flag==0) {
-
+		if (flag == 0) {
+			FixedCols = 0;
+			FixedRows = 0;
 			flag = 1;
 		}
 	}
