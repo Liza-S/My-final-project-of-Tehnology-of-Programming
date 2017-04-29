@@ -19,8 +19,19 @@ static inline void ValidCtrCheck(TMyStringGrid1 *)
 __fastcall TMyStringGrid1::TMyStringGrid1(TComponent* Owner)
 	: TStringGrid(Owner)
 {
+	flag = 0;
 }
 //---------------------------------------------------------------------------
+void __fastcall TMyStringGrid1::KeyDown(Word &Key, Classes::TShiftState shift)
+{
+	if (Key == VK_F11) {
+		if (flag==0) {
+
+			flag = 1;
+		}
+	}
+}
+
 namespace Mystringgrid
 {
 	void __fastcall PACKAGE Register()
