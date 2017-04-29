@@ -30,6 +30,11 @@ void __fastcall TMyStringGrid1::KeyDown(Word &Key, Classes::TShiftState shift)
 			FixedRows = 0;
 			flag = 1;
 		}
+		else  {
+			FixedCols = 1;
+			FixedRows = 1;
+			flag = 0;
+		}
 	}
 }
 
