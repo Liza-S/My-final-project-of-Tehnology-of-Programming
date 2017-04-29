@@ -11,6 +11,7 @@
 class PACKAGE TMyStringGrid1 : public TStringGrid
 {
 private:
+	bool flag;
 protected:
 public:
 	__fastcall TMyStringGrid1(TComponent* Owner);
