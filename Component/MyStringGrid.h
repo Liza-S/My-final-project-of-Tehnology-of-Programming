@@ -16,7 +16,7 @@ protected:
 public:
 	__fastcall TMyStringGrid1(TComponent* Owner)
 	{
-		DYNAMIC void __fastcall KeyDown(Word &Key, Class::TShiftState shift);
+		DYNAMIC void __fastcall KeyDown(Word &Key, Classes::TShiftState Shift);
 	}
 __published:
 };
