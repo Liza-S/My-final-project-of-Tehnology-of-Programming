@@ -19,6 +19,7 @@ __history/
 *.stat
 *.xml
 *.zip
+*.cbproj
 
 #############
 ## Windows detritus

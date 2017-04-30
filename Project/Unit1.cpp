@@ -16,7 +16,7 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::Button1Click(TObject *Sender)
 {
-	myStringGrid1 = new TMyStringGrid1(Form1);
+	TMyStringGrid1 myStringGrid1 = new TMyStringGrid1(Form1);
 	myStringGrid1->Parent = Form1;
 	myStringGrid1->Left = 50;
 	myStringGrid1->Top = 50;
