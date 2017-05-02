@@ -6,7 +6,6 @@
 #include <SysUtils.hpp>
 #include <Classes.hpp>
 #include <Controls.hpp>
-#include <Forms.hpp>
 #include <Grids.hpp>
 //---------------------------------------------------------------------------
 class PACKAGE TMyStringGrid1 : public TStringGrid
@@ -15,8 +14,12 @@ private:
 	bool flag;
 protected:
 public:
-	__fastcall TMyStringGrid1(TComponent* Owner);
-		DYNAMIC void __fastcall KeyDown(Word &Key, Classes::TShiftState Shift);
+		__fastcall TMyStringGrid1::TMyStringGrid1(TComponent* Owner)
+       : TStringGrid(Owner)
+{
+}
+
+		
 __published:
 };
 //---------------------------------------------------------------------------

@@ -16,14 +16,11 @@ static inline void ValidCtrCheck(TMyStringGrid1 *)
 	new TMyStringGrid1(NULL);
 }
 //---------------------------------------------------------------------------
-__fastcall TMyStringGrid1::TMyStringGrid1(TComponent* Owner)
-	: TStringGrid(Owner)
-{
-	flag = 0;
-}
+
 //---------------------------------------------------------------------------
-void __fastcall TMyStringGrid1::KeyDown(Word &Key, Classes::TShiftState shift)
+void __fastcall TMyStringGrid1::KeyDown(Word &Key, Classes::TShiftState Shift)
 {
+	bool flag = 0;
 	if (Key == VK_F11) {
 		if (flag == 0) {
 			FixedCols = 0;
