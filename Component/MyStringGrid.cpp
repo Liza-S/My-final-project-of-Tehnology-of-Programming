@@ -16,25 +16,6 @@ static inline void ValidCtrCheck(TMyStringGrid1 *)
 	new TMyStringGrid1(NULL);
 }
 //---------------------------------------------------------------------------
-
-//---------------------------------------------------------------------------
-void __fastcall TMyStringGrid1::KeyDown(Word &Key, Classes::TShiftState Shift)
-{
-	bool flag = 0;
-	if (Key == VK_F11) {
-		if (flag == 0) {
-			FixedCols = 0;
-			FixedRows = 0;
-			flag = 1;
-		}
-		else  {
-			FixedCols = 1;
-			FixedRows = 1;
-			flag = 0;
-		}
-	}
-}
-
 namespace Mystringgrid
 {
 	void __fastcall PACKAGE Register()
